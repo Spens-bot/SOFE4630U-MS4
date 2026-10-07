@@ -12,6 +12,7 @@ spec:
       labels:
         app: recorder
     spec:
+      serviceAccountName: election-service
       containers:
         - image: $RECORDER_IMAGE
           name: recorder

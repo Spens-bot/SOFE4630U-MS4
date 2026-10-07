@@ -13,6 +13,7 @@ spec:
       labels:
         app: logger
     spec:
+      serviceAccountName: election-service
       containers:
         - image: $LOGGER_IMAGE
           name: logger
